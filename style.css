@@ -1,6 +1,7 @@
 :root {
   --blue-line-color: #3f51b5;
   --shadow-color: #606a9f;
+  --gray-background: #c5c3e6;
 }
 
 * {
@@ -28,7 +29,7 @@ main {
   text-align: center;
   padding: 1rem;
   background-image: url(./images/fondo.webp);
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
@@ -55,7 +56,7 @@ nav {
 
 nav ul {
   list-style: none;
-  width: 80%;
+  width: 50%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -70,10 +71,10 @@ nav a {
   box-shadow: 2px 1px 4px black;
 }
 
-.recomendados--container h2 {
+ h2 {
   margin-bottom: 1rem;
 }
-.article--container {
+.recomendados-article--container {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -83,4 +84,70 @@ nav a {
   background-color: #3f51b5;
   height: 200px;
   width: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  border: 1px solid var(--blue-line-color);
+}
+
+.article_1{
+    background-image: url(./images/jedi.webp);
+}
+.article_2{
+    background-image: url(./images/Valorant.jpg);
+}
+.article_3{
+    background-image: url(./images/league-of-legends.jpg);
+}
+
+.recomendados--article h6 {
+    /* color: rebeccapurple; */
+    background-color: var(--gray-background);
+    width: 100%;
+    font-size: 1rem;
+}
+
+.plataformas--container{
+    display: flex;
+    flex-direction: column;
+}
+
+.plataformas-article--container{
+    display: flex;
+    justify-content: center;
+}
+
+.plataformas-article--container article{
+    margin: 0 20px;
+}
+
+.plataformas-list--container{
+    background-color: var(--gray-background);
+    border: 1px solid var(--blue-line-color);
+    padding: 1rem;
+    width: 200px;
+    text-align: start;
+}
+
+.plataformas-list--container ul{
+    list-style: inside;
+}
+
+.plataformas-table--container{
+    padding: .2rem 1rem;
+    background-color: var(--gray-background);
+    display: inline-flex;
+}
+
+
+.plataformas-table--container table{
+    border-collapse: collapse;
+    background-color: white;
+    width: 200px;
+}
+
+.plataformas-table--container table td{
+    padding: .2rem .7rem;
 }
