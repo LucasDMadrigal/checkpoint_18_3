@@ -47,7 +47,6 @@ header h1 {
 }
 
 nav {
-  width: 100vw;
   height: 12vh;
   display: flex;
   justify-content: space-around;
@@ -71,16 +70,17 @@ nav a {
   box-shadow: 2px 1px 4px black;
 }
 
- h2 {
+h2 {
   margin-bottom: 1rem;
 }
+
 .recomendados-article--container {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
-.recomendados--article {
+.recomendados-article--container .recomendados--article {
   background-color: #3f51b5;
   height: 200px;
   width: 200px;
@@ -90,64 +90,94 @@ nav a {
   display: flex;
   align-items: flex-end;
   border: 1px solid var(--blue-line-color);
+  margin: 0 20px;
 }
 
-.article_1{
-    background-image: url(./images/jedi.webp);
+.article_1 {
+  background-image: url(./images/jedi.webp);
 }
-.article_2{
-    background-image: url(./images/Valorant.jpg);
+.article_2 {
+  background-image: url(./images/Valorant.jpg);
 }
-.article_3{
-    background-image: url(./images/league-of-legends.jpg);
+.article_3 {
+  background-image: url(./images/league-of-legends.jpg);
 }
 
 .recomendados--article h6 {
-    /* color: rebeccapurple; */
-    background-color: var(--gray-background);
-    width: 100%;
-    font-size: 1rem;
+  /* color: rebeccapurple; */
+  background-color: var(--gray-background);
+  width: 100%;
+  font-size: 1rem;
 }
 
-.plataformas--container{
-    display: flex;
-    flex-direction: column;
+.plataformas--container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
 }
 
-.plataformas-article--container{
-    display: flex;
-    justify-content: center;
+.plataformas-article--container {
+  display: flex;
+  justify-content: center;
 }
 
-.plataformas-article--container article{
-    margin: 0 20px;
+.plataformas-article--container .plataformas-article {
+  margin: 0 20px;
 }
 
-.plataformas-list--container{
-    background-color: var(--gray-background);
-    border: 1px solid var(--blue-line-color);
-    padding: 1rem;
-    width: 200px;
-    text-align: start;
+.plataformas-list--container {
+  background-color: var(--gray-background);
+  border: 1px solid var(--blue-line-color);
+  padding: 1rem;
+  width: 200px;
+  text-align: start;
 }
 
-.plataformas-list--container ul{
-    list-style: inside;
+.plataformas-list--container ul {
+  list-style: inside;
 }
 
-.plataformas-table--container{
-    padding: .2rem 1rem;
-    background-color: var(--gray-background);
-    display: inline-flex;
+.plataformas-table--container {
+  background-color: var(--gray-background);
+  border: 1px solid var(--blue-line-color);
+  padding: 0.2rem 1rem;
+  display: inline-flex;
 }
 
-
-.plataformas-table--container table{
-    border-collapse: collapse;
-    background-color: white;
-    width: 200px;
+.plataformas-table--container table {
+  border-collapse: collapse;
+  background-color: white;
+  width: 200px;
 }
 
-.plataformas-table--container table td{
-    padding: .2rem .7rem;
+.plataformas-table--container table td,
+th {
+  border: 1px solid var(--blue-line-color);
+  padding: 0.2rem 0.7rem;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+.form--container {
+  /* background-color: yellow; */
+}
+.form--container form {
+  /* background-color: green; */
+  border: 1px solid white;
+  padding: 0.5rem 1rem;
+}
+
+.form--container .suscribite--label {
+  position: absolute;
+  bottom: -0.5rem;
+  transform: translateY(100%);
+  background-color: black;
+  /* color: red; */
 }

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="style.css" >
     <title>Document</title>
   </head>
   <body>
     <header>
-      <img src="./images/logo1.png" alt="" class="main-logo" />
+      <img src="./images/logo1.png" alt="" class="main-logo" >
       <h1>Todo Juegos</h1>
-      <img src="./images/logo2.png" alt="" class="main-logo" />
+      <img src="./images/logo2.png" alt="" class="main-logo" >
     </header>
     <nav>
       <ul>
@@ -23,36 +23,38 @@
       <section class="recomendados--container">
         <h2>Recomendados</h2>
         <div class="recomendados-article--container">
-          <article class="recomendados--article article_1">
+          <div class="recomendados--article article_1">
             <h6>jedi fallen</h6>
-          </article>
+          </div>
 
-          <article class="recomendados--article article_2">
+          <div class="recomendados--article article_2">
             <h6>Valorant</h6>
-          </article>
+          </div>
 
-          <article class="recomendados--article article_3">
+          <div class="recomendados--article article_3">
             <h6>League of Legend</h6>
-          </article>
+          </div>
         </div>
       </section>
       <section class="plataformas--container">
         <h2>Plataformas para jugar videojuegos</h2>
         <div class="plataformas-article--container">
-          <article class="plataformas-list--container">
+          <div class="plataformas-article plataformas-list--container">
             <ul>
               <li>Pc</li>
               <li>PLaystation</li>
               <li>Xbox</li>
               <li>Mobile</li>
             </ul>
-          </article>
+          </div>
 
-          <article class="plataformas-table--container">
-            <table border="1">
+          <div class="plataformas-article plataformas-table--container">
+            <table>
               <thead>
-                <th>Game</th>
-                <th>Precio</th>
+                <tr>
+                  <th>Game</th>
+                  <th>Precio</th>
+                </tr>
               </thead>
               <tbody>
                 <tr>
@@ -73,9 +75,21 @@
                 </tr>
               </tbody>
             </table>
-          </article>
+          </div>
         </div>
       </section>
     </main>
+    <footer>
+      <p>&copy; 2024 - Todos los derechos reservados.</p>
+      <div class="form--container">
+        <label class="suscribite--label" for="email">suscribite</label>
+        <form action="../show_data.html" method="post">
+          <label for="email">Email</label>
+          <input type="email" id="email" pattern=".+@example\.com" required >
+          <button>Enviar</button>
+        </form>
+      </div>
+      <p>Lucas Madrigal</p>
+    </footer>
   </body>
 </html>
